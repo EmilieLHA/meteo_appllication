@@ -1,4 +1,4 @@
-const cleAPI = "8317b910e00812e502edd10a5d078cac";
+const cleAPI = "TBD";
 
 // Selection des éléments du DOM 
 
