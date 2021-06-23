@@ -21,11 +21,6 @@ body {
     opacity: 0;
 }
 
-
-.col-2 {
-    font-size: 0.8em;
-}
-
 .ville,.meteo {
     text-transform: capitalize;
 }
@@ -61,14 +56,14 @@ body {
     #titre-application{
         padding: 20px !important;
     }
+    #troisiemeLigne, #quatriemeLigne {
+        font-size: 13px !important;
+    }
 }
 
 @media screen and (max-width: 500px) {
     h1 {
         font-size: 15px;
-    }
-    #troisiemeLigne, #quatriemeLigne {
-        font-size: 13px !important;
     }
 }
 
