@@ -13,8 +13,6 @@ let heures = document.querySelectorAll(".heure");
 let temperaturesParHeure = document.querySelectorAll(".temperatureParHeure");
 let jours = document.querySelectorAll(".jour");
 
-console.log(jours);
-
 let temperaturesParJour = document.querySelectorAll(".temperatureParJour");
 
 let conteneur = document.querySelector(".container");
@@ -37,8 +35,8 @@ if ("geolocation" in navigator) {
         appelAPI(lat, lon);
     };
 
-    function error(position) {
-        alert("Veuillez activer la géolocalisation");
+    function error() {
+        alert("Veuillez activer la géolocalisation svp");
         let lat = 48.90882612473876;
         let lon = 2.3430534073065727;
         appelAPI(lat, lon);
@@ -63,6 +61,9 @@ function appelAPI(lat, lon) {
     .then((reponseB) => {
         ville.innerText = reponseB.name;
     })
+
+
+    // Récupération des données détaillées 
 
     let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${cleAPI}&exclude=minutely,alerts&units=metric&lang=fr`;
     console.log(url);
