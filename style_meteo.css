@@ -27,7 +27,6 @@ body {
 }
 
 .ville,.meteo {
-    font-size: 0.8em;
     text-transform: capitalize;
 }
 
@@ -70,5 +69,11 @@ body {
     }
     #troisiemeLigne, #quatriemeLigne {
         font-size: 13px !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #informations{
+        font-size: 12px !important;
     }
 }
